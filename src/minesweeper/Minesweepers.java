@@ -281,7 +281,7 @@ public class Minesweepers extends Application {
         MenuItem newMenuItem=new MenuItem("New Game");
         newMenuItem.setOnAction(event -> {
             try {
-                createContent();
+                 scene.setRoot(createContent());
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -290,7 +290,7 @@ public class Minesweepers extends Application {
         MenuItem resetMenuItem=new MenuItem("Reset Game");
         resetMenuItem.setOnAction(event -> {
             try {
-                createContent();
+                 scene.setRoot(createContent());
             } catch (IOException e) {
                 e.printStackTrace();
             }
